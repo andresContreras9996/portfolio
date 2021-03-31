@@ -3,21 +3,33 @@
    <head>
        <title>Portfolio</title>
        <link type='text/css' href='styles.css' rel='stylesheet'>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+       <script
+       src="https://kit.fontawesome.com/06b138d96f.js"
+       crossorigin="anonymous"
+     ></script>
    </head>
    <body>
-    <div class="topnav">
-       
-        <a href="#services">services</a>
-        <a href="#portfolio">portfolio</a>
-        <a href="#contact">contact me</a>
-        <a style="float:left">Andres Contreras</a>
-    </div>
-    
 
+
+    <nav class="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+          <i class="fas fa-bars"></i>
+        </span>
+  
+        <div class="logo">Andres Contreras</div>
+        <ul class="main-nav" id="js-menu">
+          <li><a href="services" class="nav-links"> Services</a></li>
+          <li><a href="portafolio" class="nav-links">Portfolio</a></li>
+          <li><a href="contact" class="nav-links">Contact me</a></li>
+        </ul>
+    </nav>
+    <!--
     <section class="description">
         <h1 id=description>Front-end Developer</h1>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book,Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
     </section>
+  
     <section id= "services" class="services">
         <h1 id="services">Services</h1>
         <div>
@@ -47,6 +59,7 @@
            <img src="images/GitHub-logo.png" alt="github"style="width:15%"> 
        </div>
     </section>
-
+    -->
+    <script type="text/javascript" src="app.js" charset="utf-8"></script>
    </body> 
 </html>
