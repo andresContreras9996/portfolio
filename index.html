@@ -1,65 +1,119 @@
 <!DOCTYPE html>
-<html>
-   <head>
-       <title>Portfolio</title>
-       <link type='text/css' href='styles.css' rel='stylesheet'>
-       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-       <script
-       src="https://kit.fontawesome.com/06b138d96f.js"
-       crossorigin="anonymous"
-     ></script>
-   </head>
-   <body>
-
-
-    <nav class="navbar">
-        <span class="navbar-toggle" id="js-navbar-toggle">
-          <i class="fas fa-bars"></i>
-        </span>
-  
-        <div class="logo">Andres Contreras</div>
-        <ul class="main-nav" id="js-menu">
-          <li><a href="services" class="nav-links"> Services</a></li>
-          <li><a href="portafolio" class="nav-links">Portfolio</a></li>
-          <li><a href="contact" class="nav-links">Contact me</a></li>
+<html lang="en">
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <link type="text/css" href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Andres Contreras</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#services-section"
+              >Services <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio-section">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact-section">Contact me</a>
+          </li>
         </ul>
+      </div>
     </nav>
-    <!--
-    <section class="description">
-        <h1 id=description>Front-end Developer</h1>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book,Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+    <section class="description-container">
+      <h1>Javascript developer</h1>
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five
+        centuries
+      </p>
     </section>
-  
-    <section id= "services" class="services">
-        <h1 id="services">Services</h1>
-        <div>
-             <img src="images/angular.png" alt="angular"style="width:15%">  
-             <img src="images/react.png" alt="angular" style="width:15%">  
-            <img src="images/nodejs.png" alt="angular"style="width:15%"> 
-        </div>
+    <section class="services-container" id="services-section">
+      <h1>Services</h1>
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five
+        centuries
+      </p>
     </section>
-    <section id="portfolio" class="portfolio">
-        <h1 >Portfolio</h1>
-        <div>
-            <img src="https://picsum.photos/200" alt="first project"style="width:15%">  
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-            <img src="https://picsum.photos/201" alt="second project" style="width:15%"> 
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-           <img src="https://picsum.photos/202" alt="third project"style="width:15%"> 
-           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+    <section class="portfolio-container" id="portfolio-section">
+      <h1>Portfolio</h1>
 
-        </div>
+      <div class="portfolio-project">
+        <img src="images/mosaic.png" alt="mosaic"/>
+        <div class="project-content">
+        <h1>Photomosaic</h1>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries
+        </p>
+      </div>
+      </div>
+      <div class="portfolio-project">
+        <img src="images/plate.png" alt="plate"  />
+        <div class="project-content">
+        <h1>Car detector</h1>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries
+        </p>
+      </div>
+      </div>
+      <div class="portfolio-project">
+        <img src="images/slack.png" alt="slack"    />
+        <div class="project-content">
+        <h1>SlackBot</h1>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries
+        </p>
+      </div>
+      </div>
+
+
     </section>
 
-    <section id="contact" class="contact">
-        <h1 >contact me</h1>
-        <div>
-            <img src="images/linkedin.png" alt="linkedin"style="width:15%">  
-            <img src="images/correo.png" alt="correo" style="width:15%">  
-           <img src="images/GitHub-logo.png" alt="github"style="width:15%"> 
-       </div>
-    </section>
-    -->
-    <script type="text/javascript" src="app.js" charset="utf-8"></script>
-   </body> 
+
+  </body>
 </html>
