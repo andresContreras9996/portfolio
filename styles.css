@@ -1,19 +1,50 @@
 body {
-  padding-top: 60px;
+  padding-top: 80px;
   font-size: 20px;
   box-sizing: border-box;
   background-color: rgba(65, 67, 106,.7);
   color:white;
 }
+.navbar-custom {
+  background-color: rgb(8, 138, 149);
+  font-size: 25px;
+}
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: wheat;
+    font-size: 30px;
+}
+
 h1 {
-  font-size: 50px;
+  font-size: 65px;
+  color:rgb(205, 167, 21);
+}
+h2{
+  color:rgb(255, 239, 202);;
 }
 .description-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 7vh;
   margin-left: 20vw;
   margin-right: 20vw;
+}
+.container-about-me{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap:70px;
+  margin-top: 5vh;
+ 
+  
+  
+}
+.about-me{
+  width: 200px;
+  height: auto;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 .description-container h1 {
   text-align: center;
@@ -60,11 +91,20 @@ h1 {
     height: auto;
   }
   h1 {
+    
     font-size: 2em;
   }
   .form-inputs {
     display: flex;
     flex-direction: column;
+  }
+  .container-about-me{
+    display:flex;
+    flex-direction: column;
+  }
+  .services-container {
+    text-align: center;
+    margin-bottom: 20px;
   }
 }
 .form-inputs {
@@ -90,6 +130,7 @@ h1 {
     }
   } */
 .services-container {
+  margin-top:70px;
   text-align: center;
   margin-bottom: 20px;
 }
