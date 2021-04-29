@@ -2,7 +2,7 @@ body {
   padding-top: 80px;
   font-size: 20px;
   box-sizing: border-box;
-  background-color: rgba(65, 67, 106,.7);
+  background-color: rgba(65, 67, 106,.3);
   color:white;
 }
 .navbar-custom {
