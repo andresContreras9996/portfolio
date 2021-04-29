@@ -20,8 +20,13 @@ h1 {
   color:rgb(205, 167, 21);
 }
 h2{
+  font-size:40px ;
   color:rgb(255, 239, 202);;
 }
+.portfolio-project h2{
+  font-size: 60px;
+}
+
 .description-container {
   display: flex;
   flex-direction: column;
@@ -33,14 +38,14 @@ h2{
 .container-about-me{
   display:grid;
   grid-template-columns: 1fr 1fr;
+  justify-items: center;
   column-gap:70px;
   margin-top: 5vh;
  
-  
-  
 }
 .about-me{
-  width: 200px;
+  font-size: 25px;
+  width: 300px;
   height: auto;
   text-align: center;
   margin-left: auto;
@@ -54,6 +59,7 @@ h2{
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 10vh;
 }
 
 .portfolio-project {
@@ -61,7 +67,7 @@ h2{
   flex-direction: row;
   margin-left: 10vw;
   margin-right: 10vw;
-  margin-top: 20px;
+  margin-top: 90px;
   margin-bottom: 20px;
 }
 .portfolio-project img {
@@ -69,6 +75,7 @@ h2{
   height: auto;
 }
 .project-content {
+  font-size: 25px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -79,16 +86,23 @@ h2{
 }
 
 @media screen and (max-width: 768px) {
+
   .project-content {
     margin-left: 0;
+    font-size: 18px;
   }
   .portfolio-project {
     flex-direction: column;
     align-items: center;
+    margin-top: 30px;
+    row-gap: 30px;
   }
   .portfolio-project img {
     width: 80%;
     height: auto;
+  }
+  .portfolio-project h2{
+    font-size: 40px;
   }
   h1 {
     
@@ -101,11 +115,13 @@ h2{
   .container-about-me{
     display:flex;
     flex-direction: column;
+    row-gap: 30px;
   }
   .services-container {
     text-align: center;
     margin-bottom: 20px;
   }
+
 }
 .form-inputs {
   display: flex;
@@ -115,6 +131,7 @@ h2{
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 30px;
 }
 
 .formrow {
@@ -136,6 +153,8 @@ h2{
 }
 .logos-container{
     display: flex;
+    column-gap: 60px;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    align-content: center;
 }
